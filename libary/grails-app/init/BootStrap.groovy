@@ -90,7 +90,30 @@ class BootStrap {
 				(name: 'Wally West',
 				email: 'WallyW@localuni.com',
 				studentId: 'B6098755',
-				course: 'Mechanics').save()
+				course: 'Motor Mechanics').save()
+
+
+			def course1= new Course
+				(title: 'Forensic science',
+				code: 'F123',
+				tutor: 'Katie Snow',
+				department: 'Sciences',
+				description: '''Here we teach Forensic sciences. Here 					we teach Forensic sciences. Here we teach Forensic 					sciences. ''').save()
+
+			def course2= new Course
+				(title: 'Physical Education',
+				code: 'P123',
+				tutor: 'Cisco Ramon',
+				department: 'Sports',
+				description: '''Here we teach PE. Here 					we teach PE. Here we teach PE. ''').save()
+
+			def course3= new Course
+				(title: 'Motor Mechanics',
+				code: 'M123',
+				tutor: 'David Ramsey',
+				department: 'Mechanics',
+				description: '''Here we teach Motor Mechanics. Here 					we teach Motor Mechanics. Here we teach Motor 					Mechanics. ''').save()
+				
 
 
     }

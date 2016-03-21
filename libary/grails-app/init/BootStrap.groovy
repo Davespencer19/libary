@@ -45,7 +45,7 @@ class BootStrap {
 				(location: 'Liverpool',
 				openingHours: '9-5',
 				book: 'romantic',
-				student: 'Laurel Lance',
+				student: 'Wally West',
 				librarian: 'bob tank').save()
 
 
@@ -72,6 +72,25 @@ class BootStrap {
 				dateBorrowed: '21/03/2016',
 				returnDate: '04/04/2016',
 				student: 'Wally West').save()
+
+
+			def student1= new Student
+				(name: 'Barry Allen',
+				email: 'BarryA@localuni.com',
+				studentId: 'B1209623',
+				course: 'Forensic science').save()
+
+			def student2= new Student
+				(name: 'Oliver Queen',
+				email: 'OliverQ@localuni.com',
+				studentId: 'B7091365',
+				course: 'Physical Education').save()
+
+			def student3= new Student
+				(name: 'Wally West',
+				email: 'WallyW@localuni.com',
+				studentId: 'B6098755',
+				course: 'Mechanics').save()
 
 
     }

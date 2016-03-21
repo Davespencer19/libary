@@ -30,23 +30,49 @@ class BootStrap {
 			def libary1= new Libary
 				(location: 'Sheffield',
 				openingHours: '9-5',
-				book: 'Book1',
+				book: 'sci fi',
 				student: 'Barry Allen',
 				librarian: 'Jessica Jones').save()
 
 			def libary2= new Libary
 				(location: 'Manchester',
 				openingHours: '9-5',
-				book: 'Book2',
+				book: 'fantasy',
 				student: 'Oliver Queen',
 				librarian: 'James write').save()
 
 			def libary3= new Libary
 				(location: 'Liverpool',
 				openingHours: '9-5',
-				book: 'Book3',
+				book: 'romantic',
 				student: 'Laurel Lance',
 				librarian: 'bob tank').save()
+
+
+			def book1= new Book
+				(title: 'Space man',
+				author: 'Robbie Amelle',
+				isbn: '1541098531',
+				dateBorrowed: '21/03/2016',
+				returnDate: '04/04/2016',
+				student: 'Barry Allen').save()
+
+			def book2= new Book
+				(title: 'Open world',
+				author: 'Feleicty Smoke',
+				isbn: '9712308523',
+				dateBorrowed: '21/03/2016',
+				returnDate: '04/04/2016',
+				student: 'Oliver Queen').save()
+
+			def book3= new Book
+				(title: 'The lonley one',
+				author: 'Harrison Wells',
+				isbn: '3014297412',
+				dateBorrowed: '21/03/2016',
+				returnDate: '04/04/2016',
+				student: 'Wally West').save()
+
 
     }
     def destroy = {

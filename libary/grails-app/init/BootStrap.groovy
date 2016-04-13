@@ -165,61 +165,6 @@ class BootStrap {
 				student: 'Wally West').save()
 
 
-			def student1= new Student
-				(name: 'Barry Allen',
-				email: 'BarryA@localuni.com',
-				studentId: 'B1209623',
-				course: 'Forensic science').save()
-
-			def student2= new Student
-				(name: 'Oliver Queen',
-				email: 'OliverQ@localuni.com',
-				studentId: 'B7091365',
-				course: 'Physical Education').save()
-
-			def student3= new Student
-				(name: 'Wally West',
-				email: 'WallyW@localuni.com',
-				studentId: 'B6098755',
-				course: 'Motor Mechanics').save()
-
-			def student4= new Student
-				(name: 'Borris Johnson',
-				email: 'BorrisJ@localuni.com',
-				studentId: 'B4026156',
-				course: 'Polotics').save()
-
-			def student5= new Student
-				(name: 'Susan Pots',
-				email: 'SusanP@localuni.com',
-				studentId: 'B9063123',
-				course: 'Web Design').save()
-
-			def student6= new Student
-				(name: 'Chloe Fer',
-				email: 'ChloeF@localuni.com',
-				studentId: 'B1236540',
-				course: 'Dance').save()
-
-			def student7= new Student
-				(name: 'Daniel Stacy',
-				email: 'DanielS@localuni.com',
-				studentId: 'B7610956',
-				course: 'Interactive Media').save()
-
-			def student8= new Student
-				(name: 'Amy Harris',
-				email: 'AmyH@localuni.com',
-				studentId: 'B0964531',
-				course: 'Mathmatics').save()
-
-			def student9= new Student
-				(name: 'Paul Garner',
-				email: 'AmyH@localuni.com',
-				studentId: 'B0964531',
-				course: 'English').save()
-
-
 
 			def course1= new Course
 				(title: 'Forensic science',
@@ -284,6 +229,67 @@ class BootStrap {
 				department: 'Core',
 				description: '''Here we teach English. Here 					we teach English. Here we teach 				English.''').save()
 
+
+
+
+
+			def student1= new Student
+				(name: 'Barry Allen',
+				email: 'BarryA@localuni.com',
+				studentId: 'B1209623',
+				course:course1).save()
+
+			def student2= new Student
+				(name: 'Oliver Queen',
+				email: 'OliverQ@localuni.com',
+				studentId: 'B7091365',
+				course:course2).save()
+
+			def student3= new Student
+				(name: 'Wally West',
+				email: 'WallyW@localuni.com',
+				studentId: 'B6098755',
+				course:course3).save()
+
+			def student4= new Student
+				(name: 'Borris Johnson',
+				email: 'BorrisJ@localuni.com',
+				studentId: 'B4026156',
+				course:course4).save()
+
+			def student5= new Student
+				(name: 'Susan Pots',
+				email: 'SusanP@localuni.com',
+				studentId: 'B9063123',
+				course:course5).save()
+
+			def student6= new Student
+				(name: 'Chloe Fer',
+				email: 'ChloeF@localuni.com',
+				studentId: 'B1236540',
+				course:course6).save()
+
+			def student7= new Student
+				(name: 'Daniel Stacy',
+				email: 'DanielS@localuni.com',
+				studentId: 'B7610956',
+				course:course7).save()
+
+			def student8= new Student
+				(name: 'Amy Harris',
+				email: 'AmyH@localuni.com',
+				studentId: 'B0964531',
+				course:course8).save()
+
+			def student9= new Student
+				(name: 'Paul Garner',
+				email: 'AmyH@localuni.com',
+				studentId: 'B0964531',
+				course:course9).save()
+
+
+
+			
 			libary1.addToLibrarians(librarian1)
 			libary1.addToLibrarians(librarian2)
 			libary1.addToLibrarians(librarian3)
@@ -303,6 +309,19 @@ class BootStrap {
 			libary3.addToBooks(book7)
 			libary3.addToBooks(book8)
 			libary3.addToBooks(book9)
+
+			libary1.addToStudents(student1)
+			libary1.addToStudents(student2)
+			libary1.addToStudents(student3)
+			libary2.addToStudents(student4)
+			libary2.addToStudents(student5)
+			libary2.addToStudents(student6)
+			libary3.addToStudents(student7)
+			libary3.addToStudents(student8)
+			libary3.addToStudents(student9)
+
+			
+
 
     }
     def destroy = {

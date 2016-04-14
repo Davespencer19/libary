@@ -74,21 +74,15 @@ class BootStrap {
 
 			def libary1= new Libary
 				(location: 'Sheffield',
-				openingHours: '9-5',
-				book: 'sci fi',
-				student: 'Barry Allen').save()
+				openingHours: '9-5').save()
 
 			def libary2= new Libary
 				(location: 'Manchester',
-				openingHours: '9-5',
-				book: 'fantasy',
-				student: 'Oliver Queen').save()
+				openingHours: '9-5').save()
 
 			def libary3= new Libary
 				(location: 'Liverpool',
-				openingHours: '9-5',
-				book: 'romantic',
-				student: 'Wally West').save()
+				openingHours: '9-5').save()
 
 
 
@@ -122,7 +116,7 @@ class BootStrap {
 				isbn: '9010951238',
 				dateBorrowed: '21/03/2016',
 				returnDate: '04/04/2016',
-				student: 'Wally West').save()
+				student: 'Borris Johnson').save()
 
 			def book5= new Book
 				(title: 'Hunger Games',
@@ -130,7 +124,7 @@ class BootStrap {
 				isbn: '0098512398',
 				dateBorrowed: '21/03/2016',
 				returnDate: '04/04/2016',
-				student: 'Wally West').save()
+				student: 'Susan Pots').save()
 
 			def book6= new Book
 				(title: '50 Shades of Grey',
@@ -138,7 +132,7 @@ class BootStrap {
 				isbn: '7765120945',
 				dateBorrowed: '21/03/2016',
 				returnDate: '04/04/2016',
-				student: 'Wally West').save()
+				student: 'Chloe Fer').save()
 
 			def book7= new Book
 				(title: 'The Hobbit',
@@ -146,7 +140,9 @@ class BootStrap {
 				isbn: '9612095323',
 				dateBorrowed: '21/03/2016',
 				returnDate: '04/04/2016',
-				student: 'Wally West').save()
+				student: 'Daniel Stacy').save()
+
+				
 
 			def book8= new Book
 				(title: 'Stormbreaker',
@@ -154,7 +150,7 @@ class BootStrap {
 				isbn: '7120985312',
 				dateBorrowed: '21/03/2016',
 				returnDate: '04/04/2016',
-				student: 'Wally West').save()
+				student: 'Amy Harris').save()
 
 			def book9= new Book
 				(title: 'Jurrassic Park',
@@ -162,7 +158,7 @@ class BootStrap {
 				isbn: '1098765432',
 				dateBorrowed: '21/03/2016',
 				returnDate: '04/04/2016',
-				student: 'Wally West').save()
+				student: 'Paul Garner').save()
 
 
 
@@ -319,7 +315,17 @@ class BootStrap {
 			libary3.addToStudents(student7)
 			libary3.addToStudents(student8)
 			libary3.addToStudents(student9)
-
+			
+			student1.addToBooks(book1)
+			student1.addToBooks(book2)
+			student3.addToBooks(book3)
+			student4.addToBooks(book4)
+			student5.addToBooks(book5)
+			student5.addToBooks(book6)
+			student7.addToBooks(book7)
+			student8.addToBooks(book8)
+			student9.addToBooks(book9)
+			
 			
 
 
